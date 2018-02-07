@@ -1,0 +1,80 @@
+// Layout
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.nav-title {
+	font-size: $base-unit*4;
+	margin-top: 0;
+	font-weight: normal;
+}
+.nav-list {	
+	margin-top: $base-unit*3;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	text-align: right;
+}
+
+.nav-active {
+	color: $majorelle !important;
+	background-color: rgba( $majorelle, .1 );
+}
+
+.nav-list li {
+	margin-right: $base-unit*2;
+	display: inline-block;
+	font-weight: bold;
+	padding:$base-unit;
+	border-radius: 3px;
+	color: $slate;
+	&:last-child {
+		margin-right: 0;
+	}
+	a:hover {
+		color: $majorelle;
+		transition: color .3s ease-in-out;
+	}
+}
+
+img {
+	width: 100%;
+}
+
+.intro-block {
+	margin-top: $base-unit*4;
+}
+section {
+	padding-top: $base-unit*4;
+	padding-bottom: $base-unit*4;
+	@media only screen and (max-width: $screen-md) {
+		padding-top: $base-unit*2;
+		padding-bottom: $base-unit*2;
+	}
+}
+
+.seafoam-bg {
+	background-color: $seafoam;
+}
+
+.nav-container {
+	margin-top: $base-unit*4 !important;
+}
+
+.learn-more {
+	color: $majorelle;
+    background-color: rgba( $majorelle, .1 );
+    border-radius: 3px;
+    border: 1px solid $majorelle;
+    padding: $base-unit*2;
+}
+
+.nav-icon {
+	max-width: 40px;
+}

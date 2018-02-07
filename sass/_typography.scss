@@ -1,0 +1,38 @@
+// Typography
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.text-cornflower {
+    color: $cornflower;
+    background-color: rgba( $cornflower, .1 );
+}
+
+.text-cornflower-active {
+    color: $white;
+    background-color: $cornflower;
+}
+
+.text-plum {
+    color: $plum;
+    background-color: rgba( $plum, .1 );
+}
+
+.text-majorelle {
+    color: $majorelle;
+    background-color: rgba( $majorelle, .1 );
+}
+
+.text-maya {
+    color: $maya;
+    background-color: rgba( $maya, .1 );
+}
+
+
+.text-body {
+    font-size: $base-unit*2;
+    line-height: 1.5;
+    text-align: left;
+}
