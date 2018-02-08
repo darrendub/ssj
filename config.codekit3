@@ -19,6 +19,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/icon-wave.png": {
+		"ft": 32768,
+		"iS": 11335,
+		"oA": 0,
+		"oAP": "\/img\/icon-wave.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/icon-what.png": {
 		"ft": 32768,
 		"iS": 2942,
@@ -260,11 +271,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/what.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/what.html",
+		"oF": 0
+		},
+	"\/where.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/where.html",
+		"oF": 0
+		},
 	"\/who.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/who.html",
+		"oF": 0
+		},
+	"\/why.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/why.html",
 		"oF": 0
 		}
 	},

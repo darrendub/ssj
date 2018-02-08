@@ -7,6 +7,13 @@
 	}
 }
 
+.pt-xlarge {
+	padding-top: $base-unit*8;
+	@media only screen and (max-width: $screen-md) {
+		padding-top: $base-unit*2;
+	}
+}
+
 .pb-large {
 	padding-bottom: $base-unit*4;
 	@media only screen and (max-width: $screen-md) {

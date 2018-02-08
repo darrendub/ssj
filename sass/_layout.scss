@@ -10,9 +10,12 @@ body {
 }
 
 .nav-title {
-	font-size: $base-unit*4;
 	margin-top: 0;
 	font-weight: normal;
+	padding:$base-unit;
+	@media only screen and (max-width: $screen-sm) {
+		text-align: center;
+	}
 }
 .nav-list {	
 	margin-top: $base-unit*3;
@@ -20,11 +23,21 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	text-align: right;
+	@media only screen and (max-width: $screen-md) {
+		text-align: left;
+	}
 }
 
 .nav-active {
 	color: $majorelle !important;
 	background-color: rgba( $majorelle, .1 );
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+.nav-title a {
+	padding: $base-unit;
+	font-weight: normal;
 }
 
 .nav-list li {
@@ -32,7 +45,6 @@ body {
 	display: inline-block;
 	font-weight: bold;
 	padding:$base-unit;
-	border-radius: 3px;
 	color: $slate;
 	&:last-child {
 		margin-right: 0;
@@ -43,13 +55,15 @@ body {
 	}
 }
 
-img {
+img, figure {
 	width: 100%;
+	margin: 0;
 }
 
-.intro-block {
-	margin-top: $base-unit*4;
+figure {
+	background-color: $violet;
 }
+
 section {
 	padding-top: $base-unit*4;
 	padding-bottom: $base-unit*4;
@@ -72,7 +86,7 @@ section {
     background-color: rgba( $majorelle, .1 );
     border-radius: 3px;
     border: 1px solid $majorelle;
-    padding: $base-unit*2;
+    margin: $base-unit;
 }
 
 .nav-icon {

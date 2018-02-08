@@ -1,8 +1,33 @@
 // Typography
 
+h1 {
+    font-size: $base-unit*4;
+    @media only screen and (max-width: $screen-sm) {
+        font-size: $base-unit*3;
+    }
+}
+
+h2 {
+    font-size: $base-unit*3;
+    @media only screen and (max-width: $screen-sm) {
+        font-size: $base-unit*2;
+    }
+}
+
+h3 {
+    font-size: $base-unit*2;
+}
+
 a, a:visited, a:hover, a:active {
     text-decoration: none;
     color: inherit;
+}
+
+.text-link {
+    a:hover {
+        color: $majorelle;
+        transition: color .3s ease-in-out;
+    }
 }
 
 .text-cornflower {
@@ -30,9 +55,32 @@ a, a:visited, a:hover, a:active {
     background-color: rgba( $maya, .1 );
 }
 
-
 .text-body {
     font-size: $base-unit*2;
-    line-height: 1.5;
+    line-height: 1.75;
     text-align: left;
 }
+
+.text-intro {
+    font-size: $base-unit*3;
+    line-height: 2.5;
+    @media only screen and (max-width: $screen-sm) {
+        font-size: $base-unit*2;
+        line-height: 1.75; 
+    }
+}
+
+.text-intro a {
+    padding: $base-unit/2;
+}
+
+.caption-intro {
+    max-width: 500px;
+    line-height: 2;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    color: $white;
+    padding: $base-unit*5 0;
+}
+
