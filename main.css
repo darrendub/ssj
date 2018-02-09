@@ -322,6 +322,21 @@ body {
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
 
+img, figure {
+  width: 100%;
+  margin: 0; }
+
+figure {
+  background-color: #1D0628; }
+
+section {
+  padding-top: 32px;
+  padding-bottom: 32px; }
+  @media only screen and (max-width: 624px) {
+    section {
+      padding-top: 16px;
+      padding-bottom: 16px; } }
+
 .container {
   max-width: 1000px;
   margin: 0 auto; }
@@ -354,6 +369,12 @@ body {
   padding: 8px;
   font-weight: normal; }
 
+.nav-icon {
+  max-width: 40px;
+  display: list-item;
+  margin: 0 auto;
+  margin-bottom: 8px; }
+
 .nav-list li {
   margin-right: 16px;
   display: inline-block;
@@ -366,26 +387,11 @@ body {
     color: #6050dc;
     transition: color .3s ease-in-out; }
 
-img, figure {
-  width: 100%;
-  margin: 0; }
-
-figure {
-  background-color: #1D0628; }
-
-section {
-  padding-top: 32px;
-  padding-bottom: 32px; }
-  @media only screen and (max-width: 624px) {
-    section {
-      padding-top: 16px;
-      padding-bottom: 16px; } }
+.nav-container {
+  margin-top: 32px !important; }
 
 .seafoam-bg {
   background-color: #F0F3FF; }
-
-.nav-container {
-  margin-top: 32px !important; }
 
 .learn-more {
   color: #6050dc;
@@ -394,5 +400,68 @@ section {
   border: 1px solid #6050dc;
   margin: 8px; }
 
-.nav-icon {
-  max-width: 40px; }
+.timeline {
+  position: relative;
+  margin-left: 16px; }
+
+.timeline:before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #6050dc; }
+
+.timeline ul {
+  list-style: none;
+  padding-left: 16px; }
+
+.timeline li {
+  margin-top: 16px; }
+  @media only screen and (max-width: 624px) {
+    .timeline li {
+      margin-top: 32px; } }
+
+.timeline span {
+  display: block; }
+
+span.time {
+  font-size: 16px;
+  margin-bottom: 8px; }
+
+span.title {
+  font-weight: 600;
+  font-size: 24px; }
+
+span.text, span.time {
+  color: #333;
+  margin-left: 4px; }
+
+span.text {
+  margin-top: 8px; }
+
+.timeline-image {
+  margin: 24px auto;
+  max-width: 800px; }
+  @media only screen and (max-width: 624px) {
+    .timeline-image {
+      max-width: 400px; } }
+
+span.title:before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border: 3px solid #6050dc;
+  border-radius: 100%;
+  background-clip: padding-box;
+  margin-left: -1.4rem;
+  margin-right: 0.7rem;
+  vertical-align: middle; }
+
+@media (min-width: 40em) {
+  span.title:before {
+    margin-left: -1.35rem; } }
