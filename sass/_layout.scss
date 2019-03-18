@@ -57,6 +57,10 @@ section {
 
 h2.nav-title {
 	margin-bottom: 0;
+	font-weight: bold;
+	@media only screen and (max-width: $screen-sm) {
+		margin-bottom: $base-unit*3;
+	}
 }
 
 .nav-title a {
@@ -95,12 +99,23 @@ h2.nav-title {
 	background-color: $seafoam;
 }
 
+.cloud-bg {
+	background-color: $cloud;
+}
+
 .learn-more {
 	color: $majorelle;
     background-color: rgba( $majorelle, .1 );
     border-radius: 3px;
     border: 1px solid $majorelle;
     margin: $base-unit;
+}
+
+.profile-image {
+	max-width: 400px;
+	@media only screen and (max-width: $screen-sm) {
+		max-width: 200px;
+	}
 }
 
 // Timeline
@@ -199,7 +214,4 @@ span.title:before {
 
 .why {
 	max-width: 80%;
-	p{
-		line-height: 1.6;
-	}
 }

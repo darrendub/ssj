@@ -366,7 +366,11 @@ section {
   font-weight: bold; }
 
 h2.nav-title {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-weight: bold; }
+  @media only screen and (max-width: 480px) {
+    h2.nav-title {
+      margin-bottom: 24px; } }
 
 .nav-title a {
   padding: 8px;
@@ -397,12 +401,21 @@ h2.nav-title {
 .seafoam-bg {
   background-color: #F0F3FF; }
 
+.cloud-bg {
+  background-color: #f7f7f7; }
+
 .learn-more {
   color: #6050dc;
   background-color: rgba(96, 80, 220, 0.1);
   border-radius: 3px;
   border: 1px solid #6050dc;
   margin: 8px; }
+
+.profile-image {
+  max-width: 400px; }
+  @media only screen and (max-width: 480px) {
+    .profile-image {
+      max-width: 200px; } }
 
 .timeline {
   position: relative;
@@ -482,5 +495,3 @@ span.title:before {
 
 .why {
   max-width: 80%; }
-  .why p {
-    line-height: 1.6; }
