@@ -55,13 +55,18 @@ section {
 	font-weight: bold;
 }
 
+h2.nav-title {
+	margin-bottom: 0;
+}
+
 .nav-title a {
 	padding: $base-unit;
 	font-weight: normal;
+	vertical-align: middle;
 }
 
 .nav-icon {
-	max-width: 40px;
+	max-width: 32px;
 	display: list-item;
 	margin: 0 auto;
 	margin-bottom: $base-unit;
@@ -103,6 +108,7 @@ section {
 .timeline {
   position: relative;
   margin-left: $base-unit*2;
+  max-width: 80%;
 }
 .timeline:before {
   /* this is the vertical line */
@@ -127,6 +133,7 @@ section {
 }
 .timeline span {
   display: block; 
+  line-height: 1.4;
 }
 
 span.time {
@@ -137,9 +144,14 @@ span.time {
 span.title {
   font-weight: 600; 
   font-size: $base-unit*2;
+  margin-bottom: $base-unit;
 }
 
-span.text, span.time {
+span.location {
+	font-style: italic;
+}
+
+span.text, span.time, span.location {
   color: $slate;
   margin-left: $base-unit/2;
 }
@@ -177,4 +189,8 @@ span.title:before {
     margin-left: -1.35rem;
   }
 
+}
+
+.icon-emoji {
+	max-width: 32px;
 }

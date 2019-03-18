@@ -365,12 +365,16 @@ section {
   border-radius: 3px;
   font-weight: bold; }
 
+h2.nav-title {
+  margin-bottom: 0; }
+
 .nav-title a {
   padding: 8px;
-  font-weight: normal; }
+  font-weight: normal;
+  vertical-align: middle; }
 
 .nav-icon {
-  max-width: 40px;
+  max-width: 32px;
   display: list-item;
   margin: 0 auto;
   margin-bottom: 8px; }
@@ -402,7 +406,8 @@ section {
 
 .timeline {
   position: relative;
-  margin-left: 16px; }
+  margin-left: 16px;
+  max-width: 80%; }
 
 .timeline:before {
   /* this is the vertical line */
@@ -424,7 +429,8 @@ section {
       margin-top: 32px; } }
 
 .timeline span {
-  display: block; }
+  display: block;
+  line-height: 1.4; }
 
 span.time {
   font-size: 16px;
@@ -432,9 +438,13 @@ span.time {
 
 span.title {
   font-weight: 600;
-  font-size: 16px; }
+  font-size: 16px;
+  margin-bottom: 8px; }
 
-span.text, span.time {
+span.location {
+  font-style: italic; }
+
+span.text, span.time, span.location {
   color: #333;
   margin-left: 4px; }
 
@@ -466,3 +476,6 @@ span.title:before {
 @media (min-width: 40em) {
   span.title:before {
     margin-left: -1.35rem; } }
+
+.icon-emoji {
+  max-width: 32px; }
