@@ -136,7 +136,7 @@ span.time {
 
 span.title {
   font-weight: 600; 
-  font-size: $base-unit*3;
+  font-size: $base-unit*2;
 }
 
 span.text, span.time {
@@ -146,6 +146,7 @@ span.text, span.time {
 
 span.text {
 	margin-top: $base-unit;
+	margin-bottom: $base-unit*6;
 }
 
 .timeline-image {
