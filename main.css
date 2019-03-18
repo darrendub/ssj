@@ -478,4 +478,9 @@ span.title:before {
     margin-left: -1.35rem; } }
 
 .icon-emoji {
-  max-width: 32px; }
+  max-width: 32px !important; }
+
+.why {
+  max-width: 80%; }
+  .why p {
+    line-height: 1.6; }
