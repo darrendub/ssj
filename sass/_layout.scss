@@ -192,5 +192,14 @@ span.title:before {
 }
 
 .icon-emoji {
-	max-width: 32px;
+	max-width: 32px !important;
+}
+
+// Why
+
+.why {
+	max-width: 80%;
+	p{
+		line-height: 1.6;
+	}
 }
