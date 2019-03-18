@@ -432,14 +432,15 @@ span.time {
 
 span.title {
   font-weight: 600;
-  font-size: 24px; }
+  font-size: 16px; }
 
 span.text, span.time {
   color: #333;
   margin-left: 4px; }
 
 span.text {
-  margin-top: 8px; }
+  margin-top: 8px;
+  margin-bottom: 48px; }
 
 .timeline-image {
   margin: 24px auto;
